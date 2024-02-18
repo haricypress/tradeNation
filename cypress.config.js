@@ -6,6 +6,7 @@ module.exports = defineConfig({
   viewportWidth: 1280,
 
   e2e: {
+    screenshotOnRunFailure: false,
     
     baseUrl: 'https://tradenation.com/',
     specPattern: "cypress/e2e/*.js",
