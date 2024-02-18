@@ -1,5 +1,5 @@
 
-import login from "../pages/GoogleInvaliLogin.po"
+import login from "../../pages/GoogleInvaliLogin.po"
 
 describe('verifying failed step analysis', () => {
 

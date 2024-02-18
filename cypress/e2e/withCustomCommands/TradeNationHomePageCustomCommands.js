@@ -1,4 +1,4 @@
-import TradeNationHomePage from "../pages/TradeNationHomePage.po"
+import TradeNationHomePage from "../../pages/TradeNationHomePage.po"
 
 
 describe('verifying on trade home page', () => {
