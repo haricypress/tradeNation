@@ -23,3 +23,23 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("singleClickForce", (element) => {
+
+    if (element.includes("//")) {
+        cy.xpath(element).click({ force: true })
+    }
+    else {
+        cy.get(element).click({ force: true })
+    }
+})
+
+Cypress.Commands.add("titleInclude", (element) => {
+
+    cy.title().should('include', element)
+})
+Cypress.Commands.add("urlInclude", (element) => {
+
+    cy.url().should('include', element)
+
+})

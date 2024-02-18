@@ -2,15 +2,18 @@
 class gooleInvalidLogin{
 
     login(){
-        return 'a[href="https://tradenation.com/login"]'
+        return '(//div[@class="e1uvhtso10 MuiBox-root css-1qekpap"])/a[1]'
+
     }
     loginWithGoogle(){
         
-        return '.socialBtn__flexRow'
+        return '(//div[@class="socialBtn__flexRow"])[1]'
     }
     loginPageTitle(){
         return 'https://tradenation.com/login'
     }
+
+    
 
 
 }
