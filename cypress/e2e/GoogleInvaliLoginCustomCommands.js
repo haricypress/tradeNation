@@ -1,10 +1,7 @@
 
 import login from "../pages/GoogleInvaliLogin.po"
 
-describe('verifying failed step analysis', {
-  viewportHeight : 800,
-  viewportWidth : 1280,
-  },() => {
+describe('verifying failed step analysis', () => {
 
 
   it('verifying login with google link', 

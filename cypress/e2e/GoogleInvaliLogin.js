@@ -1,34 +1,31 @@
 
 import login from "../pages/GoogleInvaliLogin.po"
 
-describe('verifying failed step analysis', {
-  viewportHeight : 800,
-  viewportWidth : 1280,
-  },() => {
+describe('verifying failed step analysis',
+  () => {
 
 
-  it('verifying login with google link', 
-  
-    
-    () => {
-    
-    cy.on('uncaught:exception', (err, runnable) => {
-      return false
+    it('verifying login with google link',
+     
+      () => {
 
-    })
+        cy.on('uncaught:exception', (err, runnable) => {
+          return false
+
+        })
 
 
-    cy.visit('/')
-    
-    cy.get(login.login()).eq(0).click({force: true})
+        cy.visit('/')
 
-    cy.url().should('include',login.loginPageTitle())
-    
-    cy.get(login.loginWithGoogle()).eq(0).click({force: true})
-  
-    cy.url().should('include',"")
+        cy.xpath(login.login()).click({ force: true })
+
+        cy.url().should('include', login.loginPageTitle())
+
+        cy.xpath(login.loginWithGoogle()).click({ force: true })
+
+        cy.url().should('include', "")
 
 
 
+      })
   })
-})

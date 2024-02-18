@@ -6,10 +6,7 @@ describe('verifying on trade home page', () => {
 
   it('verify trade nation logo returns current page titile',
 
-    {
-      viewportHeight: 800,
-      viewportWidth: 1280,
-    },
+  
 
     () => {
 
